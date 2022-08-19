@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/pic50.jpg");
+}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.forms{
+    width:60%;
+    justify-content: center;
+    margin-left:20%;
+    margin-top:5%;
+    border: 2px solid rgb(212, 207, 207);
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+.nav-wrapper{
+    background-color: orange;
+    padding:5px;
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index: 1;
+    text-decoration: none;
+}
+.nav-list{
+    list-style: none;
+    padding:0;
+    display:flex;
+    align-items:stretch;
+    justify-content: space-around;
+    width:100%;
+    text-decoration:none;
+    color:black;
+}
+.nav-list a{
+    color:black;
+    text-decoration:none;
+}
+.nav-list li{
+    display:inline;
+    margin:0px;
+    font-size:30px;
+    color:black;
+    text-decoration:none;
+}
+.nav-list a:hover{
+    font-size: 2.5vw;
+}
+ 
+.nav-item{
+    color:aliceblue;
+}
+</style>
+<body>
+  <div class="nav-wrapper">
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="../main.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="login2.html">Sign Up</a></li>
+            <li><a href="login3.html">Login</a></li>
+            <li><a href="contact.html">Feedback</a></li>
+
+            
+
+        </ul>
+    </nav>
+</div>
+
+<br>
+<form style="border:1px solid #ccc" class="forms">
+  <div class="container">
+    <h1 style ="color: white">Log in</h1>
+    <p style ="color: white">Please fill in this form to create an account.</p>
+    <hr>
+
+    
+ <label for="email"><b style ="color: white">Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+   
+
+    <label for="psw"><b style ="color: white">Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+   
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"><b style ="color: white">Remember me </b></label>
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">Login </button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
